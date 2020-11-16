@@ -1,0 +1,34 @@
+<table>
+    <tr>
+        <td>Miles Travelled:</td>
+        <td><input type="text" [(ngModel)]="miles"></td>
+    </tr>
+    <tr>
+        <td>Gallons Consumed:</td>
+        <td><input type="text" [(ngModel)]="gallons"></td>
+    </tr>    
+</table>
+<button (click)="calculate()">Calculate</button>
+<br /><br />
+
+<div *ngIf="mpg && miles">
+    <h3>Output of MPG Calculation generated from click event and method call</h3>
+    <br />
+    <table>
+        <tr>
+            <td>Miles Travelled:</td>
+            <td>{{miles}}</td>
+        </tr>
+        <tr>
+            <td>Gallons Consumed:</td>
+            <td>{{gallons}}</td>
+        </tr>    
+    </table>
+    <br />
+    <div>
+        <!--Output of MPG-->
+        For {{miles}} miles travelled and {{gallons}} gallons of fuel consumed, 
+        the fuel milage
+        is {{mpg}} miles per gallon.
+    </div>
+</div>

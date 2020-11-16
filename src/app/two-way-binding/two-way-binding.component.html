@@ -1,0 +1,16 @@
+<div>
+    <label for="txtFirstName">First Name:</label>
+    <input type="text" id="txtFirstName" [(ngModel)]="firstName">
+</div>
+<div>
+    <label for="txtLastName">Last Name:</label>
+    <input type="text" id="txtLasttName" [(ngModel)]="lastName">
+</div>
+<div>
+    <label for="txtAge">Age:</label>
+    <input type="text" id="txtAge" [(ngModel)]="age">
+</div>
+
+<p>The output of the two-way binding is {{lastName}},
+    {{firstName}} is {{age}} years old
+</p>

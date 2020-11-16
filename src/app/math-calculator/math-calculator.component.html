@@ -1,0 +1,16 @@
+<!--
+    Name: Fabio Ortiz
+    Title: Ex 4 - MathCalculator
+    Date: 11/16/2020
+-->
+
+<table>
+    <tr>
+        <td><input type="text" [(ngModel)]="calculatorValue"></td>
+    </tr>
+</table>
+<button (click)="add()">+</button>
+<button (click)="subtract()">-</button>
+<button (click)="multiply()">X</button>
+<button (click)="divide()">/</button>
+<p>{{answer}}</p>
